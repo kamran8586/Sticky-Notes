@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/dist/output.css" />
+		<link rel="stylesheet" href="/font awesome/all.min.css" />
+		<title>Notes</title>
+	</head>
+	<body class="overflow-x-hidden">
+		<header class="header bg-primary p-2 text-3xl cursor-pointer flex">
+			<!-- Header start -->
+			<a href="/index.html">Sticky Notes</a>
+		</header>
+		<!-- Header end... -->
+		<div class="add-notes absolute top-14 right-8 cursor-pointer">
+			<i class="fa fa-plus text-black bg-primary text-4xl p-3 rounded-full"></i>
+		</div>
+		<div class="container grid lg:grid-cols-3 space-x-2 -z-20 w-full"></div>
+		<!-- modal box start -->
+		<div
+			class="modal-container h-screen w-screen absolute top-0 event-none bg-transparent z-50"
+		>
+			<div
+				class="modal-body relative top-14 h-[450px] p-6 w-9/12 mx-auto shadow-2xl bg-white rounded-lg hidden"
+			>
+				<textarea
+					class="user-notes w-full h-4/5 bg-gray-200 transition-all focus:outline focus:outline-4 focus:outline-blue-500 rounded-md p-2"
+					placeholder="Enter your notes here..."
+				></textarea>
+				<input
+					type="text"
+					name="name"
+					value=""
+					class="notes-title w-full bg-gray-200 transition-all focus:outline focus:outline-4 focus:outline-blue-500 rounded-md p-2"
+					placeholder="Enter unique title..."
+				/>
+				<button
+					class="save btn w-full hover:bg-primary bg-yellow-300 transition-all mt-12 inline-block text-black"
+				>
+					Save
+				</button>
+			</div>
+		</div>
+		<!-- Modal box end... -->
+		<script src="/font awesome/all.min.js"></script>
+		<script src="/control/app.js"></script>
+	</body>
+</html>
