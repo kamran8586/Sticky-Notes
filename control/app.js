@@ -57,10 +57,10 @@ const notesBox = (noteText) => {
 				</textarea>
 				<div class="buttons space-x-2">
 					<button class="edit btn bg-secondary hover:bg-secondaryHover text-white inline-block">
-						Edit
+					<i class="fa-solid fa-pen-to-square"></i>
 					</button>
 					<button class="delete btn bg-secondary hover:bg-secondaryHover text-white inline-block">
-						Delete
+						<i class="fa-solid fa-trash-can"></i>
 					</button>
 				</div>
 			</div>`;
